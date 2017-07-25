@@ -13,6 +13,14 @@ var Assert = require("assert");
 var Client = require("./../lib/index");
 var testAuth = require("./../testAuth.json");
 
+process.env.VCR_MODE = 'cache';
+
+var replayer = require('replayer');
+replayer.configure({
+  verbose: true,
+  debug: true
+});
+
 describe("[activity]", function() {
     var client;
     var token = testAuth["token"];

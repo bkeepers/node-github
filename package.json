@@ -33,7 +33,8 @@
   },
   "devDependencies": {
     "mocha": "~1.13.0",
-    "mustache": "^2.2.1"
+    "mustache": "^2.2.1",
+    "replayer": "^2.1.3"
   },
   "main": "lib",
   "types": "lib/index.d.ts",
