@@ -32,6 +32,7 @@
     "netrc": "^0.1.4"
   },
   "devDependencies": {
+    "cucumber": "^2.3.1",
     "mocha": "~1.13.0",
     "mustache": "^2.2.1",
     "replayer": "^2.1.3"
