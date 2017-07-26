@@ -8,4 +8,4 @@ Scenario: GET /issues
   And GET /issues
   Then verify response:
     | status | 200 |
-  And json body .issue.title = 'An Issue'
+  And jq ".[] | select(.title == 'An Issue')"
